@@ -1,6 +1,9 @@
 package main.java.list.Ordenacao;
 
+import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Pessoa implements Comparable<Pessoa> {
 
