@@ -25,8 +25,12 @@ public class BinaryOperatorExample {
     int resultado2 = numeros.stream()
         .reduce(0, (num1, num2) -> num1 + num2);
 
+    int resultado3 = numeros.stream()
+        .reduce(0, Integer::sum);
+
     System.out.println("A soma dos numeros e: " + resultado);
     System.out.println("A soma dos numeros e: " + resultado2);
+    System.out.println("A soma dos numeros e: " + resultado3);
 
   }
 }
