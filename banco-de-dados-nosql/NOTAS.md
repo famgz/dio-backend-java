@@ -136,7 +136,7 @@ LINDEX user1:hobbies 0
 LRANGE user1:hobbies 0 1
 
 TYPE user1:name
-``
+
 TTL user1:name  // checar tempo de expiracao em segundos
 
 PTTL user1:name  // checar tempo de expiracao em milisegundos
