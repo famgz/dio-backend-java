@@ -1,5 +1,6 @@
 package dio;
 
+import dio.facade.Facade;
 import dio.singleton.SingletonEager;
 import dio.singleton.SingletonLazy;
 import dio.singleton.SingletonLazyHolder;
@@ -32,6 +33,10 @@ public class Test {
         robo.mover();
         robo.setComportamento(agressivo);
         robo.mover();
+
+        // Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Jailton", "123123");
 
     }
 }
