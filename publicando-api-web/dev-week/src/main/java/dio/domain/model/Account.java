@@ -19,10 +19,10 @@ public class Account {
 
     private String agency;
 
-    @Column(scale = 13, precision = 2)
+    @Column(scale = 2, precision = 13)
     private BigDecimal balance;
 
-    @Column(name = "additional_limit", scale = 13, precision = 2) // limit might be a reserved word
+    @Column(name = "additional_limit", scale = 2, precision = 13) // limit might be a reserved word
     private BigDecimal limit;
 
     public Long getId() {
