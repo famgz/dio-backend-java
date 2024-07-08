@@ -1,5 +1,8 @@
 .vscode
 .idea
+.env
+
+application-prd.yml
 
 Blank Sandbox Sandbox Credentials.txt
 
