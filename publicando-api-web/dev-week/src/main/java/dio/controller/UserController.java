@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import java.util.List;
 
 import dio.domain.model.User;
 import dio.service.UserService;
@@ -22,6 +23,12 @@ public class UserController {
 
     public UserController(UserService userService) {
         this.userService = userService;
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<User>> findAll() {
+        var allUsers = userService.findAll();
+        return ResponseEntity.ok(allUsers);
     }
 
     @GetMapping("/{id}")
